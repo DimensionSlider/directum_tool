@@ -1,0 +1,20 @@
+IReferenceFactory		
+	ro  property ID: Integer;
+	ro  property History(ID: Integer): IComponent;
+	ro  property Name: WideString;
+	ro  property LinkedReferenceNames: IStringList;
+	ro  property Title: WideString;
+	ro  property Application: IApplication;
+	ro  property Kind: TContentKind;
+	ro  property ObjectInfo(ID: Integer): IObjectInfo;
+	function CreateNew: IObject;
+	procedure DeleteByCode(const Code: WideString);
+	procedure DeleteByID(ID: Integer);
+	function GetComponent: IReference;
+	function GetObjectByCode(const Code: WideString): IObject;
+	function GetObjectByID(ID: Integer): IObject;
+	
+IReferencesFactory
+	property ReferenceFactory(const Name: WideString): IReferenceFactory;
+
+

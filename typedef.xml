@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<type name="IReferenceFactory">
+	<method name="DeleteByID" params="ID: integer" kind="proc">
+		<params>
+			<param name="ID" type="Integer"/>			
+		</params>
+	</method>
+	<property name="ID" type="Integer" />
+
+	addNewVariableProposal( SynCompletionProposal, 'Name', 'string' );
+    addNewVariableProposal( SynCompletionProposal, 'History','IComponent' );
+    addNewVariableProposal( SynCompletionProposal, 'ID', 'Integer' );
+    addNewVariableProposal( SynCompletionProposal, 'Title', 'WideString' );
+    addNewVariableProposal( SynCompletionProposal, 'LinkedReferenceNames', 'IStringList' );
+    addNewVariableProposal( SynCompletionProposal, 'Application', 'IApplication' );
+    addNewVariableProposal( SynCompletionProposal, 'Kind', 'TContentKind' );
+    addNewVariableProposal( SynCompletionProposal, 'ObjectInfo', 'IObjectInfo' );
+    addNewFunctionProposal( SynCompletionProposal, 'CreateNew', '','IObject' );
+    addNewFunctionProposal( SynCompletionProposal, 'GetComponent', '','IReference' );
+    addNewFunctionProposal( SynCompletionProposal, 'GetObjectByCode', 'const code: WideString','IObject' );
+    addNewProcedureProposal( SynCompletionProposal, 'DeleteByCode', 'const Code: WideString' );
+    addNewProcedureProposal( SynCompletionProposal, 'DeleteByID',   'ID: Integer' );
+	
+	
+</type>
